@@ -55,6 +55,13 @@
 	left: 7vw;
 	margin: 0 6%;
 }
+#hero__video--mute{
+	width: 5vw;
+}
+#hero__video--play{
+	right: 10vw;
+	width: 5vw;
+}
 
 /*** [GAMES] ***/
 .games__play{
@@ -89,6 +96,7 @@
 }
 #demographics__map{
 	width: 96%;
+	margin-left: 0;
 }
 #demographics__mapText{
 	width: 50%;

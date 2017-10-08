@@ -1,0 +1,11 @@
+/* Copyright Praxus (Praxus Group) 2017 */
+/**
+ * Mobile CSS
+ * @desc Praxus mobile CSS definitions.
+ *
+ * @package PraxusHome
+ * @author <a href="http://yaypaul.com">YayPaul (Paul West)</a>
+ * @copyright 2017 Praxus (Praxus Group).
+ * @license MIT
+ */
+.headline{font-size:7.5vw;line-height:11.5vw}.heading{font-size:6vw;line-height:8vw}.heading--bar{position:relative;overflow:hidden;padding:1.3vw 5vw 1.2vw 5vw}.main{font-size:4.2vw;line-height:5.5vw}.quote{font-size:4.5vw;line-height:6vw}.column2{width:100%}.column3{width:100%}.praxus__lines{top:-6vw;left:-6.5vw;width:14vw}#hero__wordmark{left:10.5vw;width:80vw}#hero__text{top:51vw;left:7vw;margin:0 6%}#hero__video--mute{width:5vw}#hero__video--play{right:10vw;width:5vw}.games__play{margin-top:0%;margin-bottom:7%}.games__divider{margin-bottom:14%}.games__text--number{font-size:15vw}.games__text{font-size:5.5vw;line-height:7vw}.demographics__icon{height:40vw;margin-top:8vw}.demographics__number{font-size:14vw}.demographics__text{font-size:6.2vw;line-height:6.6vw}.demographics__divider{margin:8vw 0}#demographics__map{width:96%;margin-left:0}#demographics__mapText{width:50%;margin:8% 10%;font-size:8vw;line-height:9vw}.organize__icon{height:30vw;margin-top:10vw;margin-bottom:3vw}.organize__text{font-size:8.2vw;line-height:11vw}.organize__textSub{font-size:5.9vw;line-height:7vw}.foryou__icon{height:30vw;margin-top:5vw;margin-bottom:4vw}.foryou__text{font-size:5.9vw;line-height:7.2vw}.foryou__dividerVertical{display:none}#signup{height:auto;background-position:79%}.signup__text{margin:0.5vw 5vw 5vw 9vw}#signup__logo{top:12%;right:10%;width:30vw}.copy__text{font-size:1.8vw;line-height:2vw;margin-bottom:4vw}

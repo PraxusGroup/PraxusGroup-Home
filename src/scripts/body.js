@@ -13,9 +13,23 @@
 
  	'use strict';
 
+ 	var MUTE_SRC = 'images/icon__mute.svg';
+ 	var UNMUTE_SRC = 'images/icon__unmute.svg';
+ 	var PLAY_SRC = 'images/icon__play.svg';
+ 	var PAUSE_SRC = 'images/icon__pause.svg';
+
  	var video = document.getElementById( 'hero__video' );
  	var muteButton = document.getElementById( 'hero__video--mute' );
  	var playButton = document.getElementById( 'hero__video--play' );
+
+ 	//Handle Reduced Motion Accessibility
+ 	if( window.matchMedia( '(prefers-reduced-motion)' ).matches ){
+	    video.removeAttribute( 'autoplay' );
+	    video.pause();
+	    requestAnimationFrame( function(){
+			playButton.setAttribute( 'src', PLAY_SRC );
+		} );
+	}
 
  	/**
  	 * Handle Mute Clicks
@@ -26,13 +40,13 @@
  		if( video.muted ){
  			video.muted = false;
  			requestAnimationFrame( function(){
- 				muteButton.setAttribute( 'src', 'images/icon__unmute.svg' );
+ 				muteButton.setAttribute( 'src', UNMUTE_SRC );
  			} );
  		}
  		else{
  			video.muted = true;
  			requestAnimationFrame( function(){
- 				muteButton.setAttribute( 'src', 'images/icon__mute.svg' );
+ 				muteButton.setAttribute( 'src', MUTE_SRC );
  			} );
  		}
 
@@ -47,13 +61,13 @@
  		if( video.paused ){
  			video.play();
  			requestAnimationFrame( function(){
- 				playButton.setAttribute( 'src', 'images/icon__pause.svg' );
+ 				playButton.setAttribute( 'src', PAUSE_SRC );
  			} );
  		}
  		else{
  			video.pause();
  			requestAnimationFrame( function(){
- 				playButton.setAttribute( 'src', 'images/icon__play.svg' );
+ 				playButton.setAttribute( 'src', PLAY_SRC );
  			} );
  		}
 

@@ -113,6 +113,74 @@ strong{
 	width: 9vw;
 }
 
+/*** [NAV] ***/
+#menu__button{
+	display: block;
+	position: fixed;
+	top: 1.5vw;
+	left: 1.5vw;
+	width: 2vw;
+	cursor: pointer;
+	z-index: 10;
+	filter: drop-shadow( 1px 1px 3px rgba( 0,0,0,0.5 ) );
+}
+#menu{
+	display: block;
+	position: fixed;
+	z-index: 100;
+	top: -3px;
+	transform: translateX( -330px );
+	width: 310px;
+	height: auto;
+	background: rgb( 200,33,42 );
+	box-shadow: 3px 3px 0px rgba( 200,33,42,0.45 );
+}
+	#menu__close{
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 263px;
+		width: 1.5vw;
+		padding: 1vw;
+		cursor: pointer;
+		z-index: 101;
+	}
+
+	.menu__item{
+		display: block;
+		padding: 0.55vw 1.5vw;
+		color: rgb( 255,255,255 );
+		text-decoration: none;
+	}
+	.menu__item:hover,
+	.menu__item:focus{
+		text-decoration: none;
+		background-color: rgb( 33,33,33 );
+	}
+	.menu__item--alt{
+		background-color: rgb( 33,33,33 );
+	}
+	.menu__item--alt:hover,
+	.menu__item--alt:focus{
+		text-decoration: none;
+		background-color: rgb( 200,33,42 );
+	}
+		.menu__itemIcon{
+			display: inline-block;
+			position: relative;
+			width: 1vw;
+			top: -0.5vw;
+			margin-left: 0.3vw;
+		}
+
+	.menu__divider{
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: rgb( 255,255,255 );
+	}
+
+
 /*** [HERO] ***/
 #hero{ 
 	width : 100%;
@@ -157,7 +225,7 @@ strong{
 		#hero__video--mute{
 			display: block;
 			position: absolute;
-			top: 2vw;
+			top: 1.5vw;
 			right: 2vw;
 			width: 2vw;
 			cursor: pointer;
@@ -166,7 +234,7 @@ strong{
 		#hero__video--play{
 			display: block;
 			position: absolute;
-			top: 2vw;
+			top: 1.5vw;
 			right: 6vw;
 			width: 2vw;
 			cursor: pointer;

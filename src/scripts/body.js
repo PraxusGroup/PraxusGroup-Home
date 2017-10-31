@@ -18,6 +18,10 @@
  	var PLAY_SRC = 'images/icon__play.svg';
  	var PAUSE_SRC = 'images/icon__pause.svg';
 
+ 	var menu = document.getElementById( 'menu' );
+ 	var menuButton = document.getElementById( 'menu__button' );
+ 	var menuClose = document.getElementById( 'menu__close' );
+
  	var video = document.getElementById( 'hero__video' );
  	var muteButton = document.getElementById( 'hero__video--mute' );
  	var playButton = document.getElementById( 'hero__video--play' );
@@ -82,6 +86,20 @@
  	playButton.addEventListener( 'click', function(){
 
  		handlePlayClicks();
+
+ 	} );
+
+ 	menuButton.addEventListener( 'click', function(){
+
+ 		menu.classList.remove( 'menu__animateOut' );
+ 		menu.classList.add( 'menu__animateIn' );
+
+ 	} );
+
+ 	menuClose.addEventListener( 'click', function(){
+
+ 		menu.classList.remove( 'menu__animateIn' );
+ 		menu.classList.add( 'menu__animateOut' );
 
  	} );
 

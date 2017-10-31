@@ -45,6 +45,27 @@
 	width: 14vw;
 }
 
+/** [MENU] ***/
+#menu__button{
+	top: 2vw;
+	left: 2vw;
+	width: 5vw;
+}
+#menu__close{
+	width: 5vw;
+	padding: 3.3vw;
+}
+	.menu__item{
+		padding: 3.55vw 4.5vw;
+		font-size: 7vw !important;
+		line-height: 8vw !important;
+	}
+		.menu__itemIcon{
+			width: 3vw;
+			top: -1.5vw;
+			margin-left: 1.3vw;
+		}
+
 /*** [HERO] ***/
 #hero__wordmark{
 	left: 10.5vw;
@@ -56,9 +77,11 @@
 	margin: 0 6%;
 }
 #hero__video--mute{
+	top: 2vw;
 	width: 5vw;
 }
 #hero__video--play{
+	top: 2vw;
 	right: 10vw;
 	width: 5vw;
 }

@@ -335,3 +335,32 @@
  		font-size: 0.8vw;
  		line-height: 1vw;
  	}
+
+
+/*** [ANIMATION] ***/
+.menu__animateIn{
+	animation: .25s menu__in;
+	animation-fill-mode: forwards;
+}
+.menu__animateOut{
+	animation: .5s menu__out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes menu__in{
+	0%{ 
+		transform: translateX( -330px );
+	}
+	100%{
+		transform: translateX( -3px );
+	}
+}
+
+@keyframes menu__out{
+	0%{ 
+		transform: translateX( -3px );
+	}
+	100%{
+		transform: translateX( -330px );
+	}
+}

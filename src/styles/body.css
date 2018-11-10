@@ -1,4 +1,4 @@
-/* Copyright Praxus (Praxus Group) 2017 */
+/* Copyright Praxus (Praxus Group) 2017-2018 */
 /**
  * Body CSS
  * @desc Praxus body CSS definitions.
@@ -310,7 +310,15 @@
 	 		width: 46%;
 	 		margin: 0.5vw 5vw 3vw 7vw;
 	 		color: rgb( 255,255,255 );
-	 	}
+		}
+		.signup__textLink{
+			text-decoration: none;
+			color: rgb( 237,33,42 );
+		}
+		.signup__textLink:hover{
+			text-decoration: underline;
+			color: rgb( 255,255,255 );
+		}
  	.signup__link{
  		display: block;
  		width: 30%;
